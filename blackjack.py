@@ -133,7 +133,7 @@ class Blackjack:
             if player.value > dealer_pts and not player.check_bust():
                 print(f"You beat the dealer and gained {player.bet}!")
                 player.money += player.bet
-                print(f"Current money: {player}.money")
+                print(f"Current money: {player.money}")
             else:
                 print(f"You lost the round and lost {player.bet}!")
                 player.money -= player.bet
